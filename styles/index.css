@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-image: url('/assets/background_intro.png');
+    background-image: url('../assets/background_intro.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
