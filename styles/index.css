@@ -3,9 +3,14 @@
     /* Colors */
     --color-primary: #E3646E;
     --color-secondary: #C0C4CE;
+    --color-subtitle: #E2E4E9;
     --color-accent: #878EA1;
     --color-bg-chip: #292C34;
-    --color-white: #fff;
+    --color-bg-chip-hover: #292c3480;
+    --color-bg: #16181D;
+    --color-bg-dark: #0D0E11;
+    --color-white: #ffffff;
+    --color-purple: #BB72E9;
 
     /* Font families */
     --font-main: 'Maven Pro', sans-serif;
@@ -19,6 +24,14 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -27,6 +40,7 @@ body {
     font-family: var(--font-main);
     color: var(--color-secondary);
     line-height: 1.6;
+    background-color: var(--color-bg);
 }
 
 header {
@@ -35,9 +49,15 @@ header {
     background-repeat: no-repeat;
 }
 
+footer {
+    background-image: url('../assets/background_contacts.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #header-container {
     text-align: center;
-    margin: 0 auto 40px;
+    margin: 0 auto 57px;
 
     display: flex;
     flex-direction: column;
@@ -51,7 +71,18 @@ header {
     color: var(--color-primary);
 }
 
-#perfil {
+.accent-purple {
+    color: var(--color-purple);
+}
+
+.subtitle {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+#profile {
     position: relative;
     width: 112px;
     height: 112px;
@@ -59,7 +90,7 @@ header {
     margin-bottom: 56px;
 }
 
-#foto-perfil {
+#profile-picture {
     position: relative;
 
     width: 112px;
@@ -72,17 +103,10 @@ header {
     border: 3px solid var(--color-primary);
 }
 
-#tag-perfil {
+#tag-profile {
     position: absolute;
     bottom: 0;
     right: 0;
-}
-
-h1 {
-    font-family: var(--font-mono);
-    font-size: 20px;
-    line-height: 120%;
-    font-weight: 400;
 }
 
 #stack {
@@ -94,12 +118,14 @@ h1 {
     margin-bottom: 20px;
 }
 
-#descricao {
+.small-description {
     font-family: var(--font-main);
     font-size: 14px;
     line-height: 140%;
-    color: var(--color-accent);
+    color: var(--color-accent);    
+}
 
+#intro-description {
     margin-bottom: 80px;
 }
 
@@ -133,4 +159,66 @@ h1 {
 #tech-stack img {
     width: 24px;
     height: 24px;
+}
+
+.section-container {
+    text-align: center;
+
+    padding: 72px 0 144px;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-bottom: 48px;
+}
+
+.section-description {
+   font-family: var(--font-stack);
+   font-weight: 700; 
+   font-size: 24px;
+   line-height: 120%;
+   color: var(--color-subtitle);
+}
+
+#meus-servicos {
+    background-color: var(--color-bg-dark);
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.contact-info {
+    flex: 1;
+    width: 100%;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-info a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-secondary);
+    background-color: var(--color-bg-chip);
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+
+.contact-info a:hover {
+    background-color: var(--color-bg-chip-hover);
+    color: var(--color-white);
 }

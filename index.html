@@ -12,13 +12,13 @@
 <body>
     <header>
         <div id="header-container">
-            <div id="perfil">
-                <img id="foto-perfil" src="assets/artur.png" alt="foto do Artur Neri com camiseta preta">
-                <img src="assets/tag.png" alt="code tag" id="tag-perfil">
+            <div id="profile">
+                <img id="profile-picture" src="assets/artur.png" alt="foto do Artur Neri com camiseta preta">
+                <img src="assets/tag.png" alt="code tag" id="tag-profile">
             </div>
-            <h1>Olá, mundo! Meu nome é <span class="accent">Artur Neri</span> e sou</h1>
+            <h1 class="subtitle">Olá, mundo! Meu nome é <span class="accent">Artur Neri</span> e sou</h1>
             <p id="stack">Desenvolvedor Full Stack</p>
-            <p id="descricao">Transformo necessidades em aplicações reais, envolventes e funcionais. Desenvolvo sistemas através da minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.</p>
+            <p id="intro-description" class="small-description">Transformo necessidades em aplicações reais, envolventes e funcionais. Desenvolvo sistemas através da minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.</p>
             <section>
                 <ul id="tech-stack">
                     <li><img src="assets/icons/GitHub.svg" alt="GitHub icon">GitHub</li>
@@ -34,36 +34,66 @@
                 </ul>
             </section>
 
-            <a href="#meu-trabalho" id="scroll-down"><img src="assets/down.png" alt="down arrow"></a>
+            <a href="#my-work" id="scroll-down"><img src="assets/down.png" alt="down arrow"></a>
         </div>
     </header>
     <main>
-        <section id="meu-trabalho">
-            <h2>Meu trabalho</h2>
-            <p>Veja os projetos em destaque</p>
+        <section class="section-container"  id="my-work">
+            <div class="section-header">
+                <h2 class="section-title subtitle"><span class="accent">Meu trabalho</span></h2>
+                <p class="section-description">Veja os projetos em destaque</p>
+            </div>
             <ul>
                 <li><a href="#">Projeto 1</a></li>
                 <li><a href="#">Projeto 2</a></li>
                 <li><a href="#">Projeto 3</a></li>
             </ul>
         </section>
-        <section>
-            <h2>Meus serviços</h2>
-            <p>Como posso colaborar com você</p>
+        <section class="section-container"  id="meus-servicos">
+            <div class="section-header">
+                <h2 class="section-title subtitle"><span class="accent">Meus serviços</span></h2>
+                <p class="section-description">Como posso colaborar com você</p>
+            </div>
             <ul>
                 <li>Websites e Aplicativos</li>
                 <li>APIs e bancos de dados</li>
             </ul>
         </section>
     </main>
-    <footer>
-        <h2>Contato</h2>
-        <p>Gostou do meu trabalho?</p>
-        <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
-        <ul>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li>
+    <footer class="section-container">
+        <div class="section-header">
+            <h2 class="section-title subtitle"><span class="accent-purple">Contato</span></h2>
+            <p class="section-description">Gostou do meu trabalho?</p>
+            <p class="small-description">Entre em contato ou acompanhe as minhas redes sociais!</p>
+        </div>
+        <ul class="contact-links">
+            <li class="contact-info">
+                <a href="#">
+                    <span>
+                        <img src="assets/icons/LinkedinLogo.svg" alt="">
+                        LinkedIn 
+                    </span>
+                    <img src="assets/icons/ArrowUpRight.svg" alt="">
+                </a>
+            </li>
+            <li class="contact-info">
+                <a href="#">
+                    <span>
+                        <img src="assets/icons/GitHubLogo.svg" alt="">
+                        GitHub
+                    </span>                     
+                    <img src="assets/icons/ArrowUpRight.svg" alt="">
+                </a>
+            </li>
+            <li class="contact-info">
+                <a href="#">
+                    <span>
+                        <img src="assets/icons/InstagramLogo.svg" alt="">
+                        Instagram
+                    </span>
+                    <img src="assets/icons/ArrowUpRight.svg" alt="">
+                </a>
+            </li>
         </ul>
     </footer>
 </body>
