@@ -118,11 +118,24 @@ footer {
     margin-bottom: 20px;
 }
 
+.small-title {
+    font-family: var(--font-stack);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+}
+
 .small-description {
     font-family: var(--font-main);
     font-size: 14px;
     line-height: 140%;
     color: var(--color-accent);    
+}
+
+.services-item_description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 #intro-description {
@@ -185,6 +198,24 @@ footer {
 
 #meus-servicos {
     background-color: var(--color-bg-dark);
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    gap: 24px;
+}
+
+.services-item {
+    padding: 20px;
+    max-width: 280px;
+    min-width: 200px;
+    flex: 1;
+    text-align: left;
+    border: 2px solid #16181D;
+    border-radius: 12px;
 }
 
 .contact-links {
