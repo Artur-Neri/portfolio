@@ -253,3 +253,35 @@ footer {
     background-color: var(--color-bg-chip-hover);
     color: var(--color-white);
 }
+
+.card-under-construction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg-chip);
+    border-radius: 16px;
+    padding: 40px 24px;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.04);
+    color: var(--color-secondary);
+    font-family: var(--font-main);
+    font-size: 1.1rem;
+    gap: 16px;
+    min-width: 260px;
+    min-height: 120px;
+    margin: 0 auto;
+    border: 2px solid var(--color-primary);
+}
+
+.card-under-construction-desc {
+    color: var(--color-accent);
+    font-size: 0.95rem;
+    margin-top: 4px;
+    text-align: center;
+    display: block;
+}
+
+.projects {
+    max-width: 680px;
+    margin: 0 auto;
+}
