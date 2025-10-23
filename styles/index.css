@@ -30,6 +30,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 html {
@@ -214,11 +215,11 @@ footer {
 }
 
 .projects__card-content .small-title {
-    font-weight: 700;
-    font-family: var(--font-stack);
-    font-size: 16px;
-    line-height: 120%;
     margin-bottom: 8px;
+}
+
+.projects__card-content .small-title a:hover {
+    color: var(--color-primary);
 }
 
 .projects__card-content .small-description {
